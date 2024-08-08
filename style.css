@@ -1,0 +1,70 @@
+body {
+    background: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+.card {
+    background: rgb(18, 17, 17);
+    text-align: center;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.boton {
+    font-family: sans-serif;
+    background-color: rgb(27, 27, 36);
+    border-radius: 20px;
+    border-color: white;
+    margin: 20px;
+    height: 50px;
+    width: 100px;
+    color: white;
+    font-size: 20px
+}
+
+.h1-separado {
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+.navegador {
+    height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+    background: rgb(12, 12, 17);
+    text-decoration: none;
+    
+}
+
+.lista {
+    list-style: none;
+    display: inline-flex;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.p-separado {
+    text-align: justify center;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.h2-clase {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    padding-right: 10px;
+}
