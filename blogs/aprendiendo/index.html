@@ -18,7 +18,7 @@
         </div>
     <div class="caja">
         <h1 id="titulo">Aprendiendo CSS y HTML - <span>07/08/2024</span></h1>
-        <p class="texto">Bueno, hoy dia estare reforzando y aprendiendo, para empezar reforzare los conocimientos que ya tenia mediante la pagina de <a class="links1" href="https://www.w3schools.com/">W3Schools.com</a> (Muy buena pagina para empezar a reforzar o aprender desde 0), pero antes de empezar con el aprendizaje tuve que configurar mi entorno de VSCode para poder estar comodo con el lenguaje HTML y mas lenguajes de programacion en un futuro, Instale un par de extensiones <a href="https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens" class="links1">Error Lens</a></p>
+        <p class="texto">Bueno, hoy dia estare reforzando y aprendiendo, para empezar reforzare los conocimientos, pero antes de empezar con el aprendizaje tuve que configurar mi entorno de VSCode para poder estar comodo con el lenguaje HTML y mas lenguajes de programacion en un futuro, Instale un par de extensiones <a href="https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens" class="links1">Error Lens</a>, bueno por todo este blog estaremos viendo el progreso de mi pagina web simplificado para ustedes para evitar hacer tan largo el blog.</p>
 
         <p class="texto">Las extensiones que instale fueron:</p>
         <ol>
@@ -28,22 +28,196 @@
         </ol>
         <p class="texto">Una vez que he configurado mi entorno correctamente, reforze mis conocimientos haciendo una pagina completamente nueva que es la que estas viendo en estos mismos momentos y la pagina de presentacion anteriormente mostrada</p>
 
-        <p>Como hice la pagina de presentacion mia, Primero empece con la estructura basica de HTML hice un archivo nuevo HTML y dentro puse el tag <span class="codigo">html:5</span> para que VSCode me genere automaticamente la estructura</p>
+        <p class="texto">Como hice la pagina de presentacion mia, Primero empece con la estructura basica de HTML hice un archivo nuevo HTML y dentro puse el tag <span class="codigo">html:5</span> para que VSCode me genere automaticamente la estructura</p>
 
         <p class="texto">y quedo tal que asi:</p>
-
-        <p class="codigo">
             <pre><code>
+                <p class="texto codigo">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;Document&lt;/title&gt;
+    &lt;title&gt;Document&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-
+                    &lt;p&gt;test&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
+</p>
                 </code></pre>
+
+                <p class="texto">Despues de tener toda la estructura basica hecha, empece a hacerme una idea de como seria la pagina de presentacion, me decidi por un fondo negro y una caja media gris casi negro con el texto que deseaba el titulo y los botones, me puse a agregar cosas en CSS y quedo tal que asi en principio el HTML y CSS</p>
+                <pre><code>
+                    <p class="texto codigo">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Bienvenido estimado&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;navegador&quot;&gt;
+        &lt;nav&gt;
+            &lt;ul class=&quot;lista&quot;&gt;
+                &lt;li&gt;&lt;a class=&quot;links&quot; href=&quot;https://itzhenry.is-a.dev/&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;links&quot; href=&quot;https://youtube.com/ItzDoubted&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;links&quot;&gt;Discord&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;h1 class=&quot;h1-separado&quot;&gt;Me presento soy ItzHenry&lt;/h1&gt;
+        &lt;h2 class=&quot;h2-clase&quot;&gt;HTML, CSS y JS (Aprendiendo)&lt;/h2&gt;
+        &lt;p class=&quot;p-separado&quot;&gt;Hola, me llamo Henry y actualmente ando aprendiendo HTML y CSS, Esta es una de las primeras paginas que hare para mi presentacion, Ya tengo algo de conocimiento pero solo lo basico, con el pasar de los tiempos ire aprendiendo mas, si quieres saber puedes ir a mi blog.&lt;/p&gt;
+                    
+        &lt;button class=&quot;boton&quot; onclick=&quot;location.href=&#39;blogs/&#39;&quot;&gt;Blogs&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </p>
+                    </code></pre>
+                    <p class="texto">Lo que principalmente agrege fueron la barra de navegacion, el div donde estara la caja con el texto y un boton dirigiendo a la pagina de blogs.</p>
+                    <p class="texto">La parte mas dificil fue el CSS al mi parecer empece el archivo de CSS con algo simple</p>
+
+                    <pre><code>
+                        <p class="texto codigo">
+/* Aca empezamos a poner todo el body de color negro porque asi estaran las paginas de Inicio mias. */
+
+body {
+    background: black;
+    font-family: arial;
+    color: white;
+}        
+                        </p>
+                    </code></pre>
+                    <p class="texto">bueno despues de eso agregamos las clases que necesitare en el futuro, que seran basicamente la clase de la card, el texto, el boton, los estilos de texto etc, abajo dejare el codigo que he hecho explicado a detalle. </p>
+<pre><code>
+    <p class="texto codigo">
+                            
+.card {
+    background: rgb(18, 17, 17);
+    text-align: center;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+}
+</p>
+</pre></code>
+
+<p class="texto"><span class="negritas">Explicacion: </span>En la clase card (la caja en el centro) lo que hacemos es al div darle un background de color negro-gris, lo segundo que hacemos es poner todo el texto en modo centrado con el tag de <span class="codigo">text-align: center; </span>, despues le damos un ancho de 600 pixeles y una altura automatica para que se ajuste al contenido dentro del div, desde ahora en adelante al div le diremos caja para que se entienda mejor, con el <span class="codigo">border-radius: 20px;</span> redondeamos los bordes de la caja, para terminar esto le ponemos un margen de 20 pixeles en la parte de arriba para que se vea separado de la barra de navegacion y un relleno de 20 pixeles para que el texto se separe de la caja, me olvide de explicar, el <span class="codigo">margin: auto;</span> es para que la caja este en el centro de la pagina.</p>
+
+<pre><code>
+<p class="codigo">
+          
+.boton {
+    font-family: sans-serif;
+    background-color: rgb(27, 27, 36);
+    border-radius: 20px;
+    border-color: white;
+    margin: 20px;
+    height: 50px;
+    width: 100px;
+    color: white;
+    font-size: 20px
+}
+</p>
+</code></pre>
+
+<p class="texto"><span class="negritas">Explicacion: </span>En el boton hicimos algo simple, le pusimos una fuente de sans-serif porque aun no me decidia en ese momento que fuente ponerle a los textos, luego lo modifico, un color de fondo gris, un <span class="codigo">border-radius</span> de 20 pixeles y el color blanco para el borde, un margen de 20 pixeles, una altura de 50 pixeles y una anchura de 100 pixeles, por ultimo el texto tendra un tamaño de 20 pixeles para que se vea lo suficientemente grande.</p>
+
+<code><pre>
+<p class="codigo">
+
+                            
+.h1-separado {
+    padding-top: 30px;
+    font-size: 40px;
+}
+</p>
+</pre></code>
+
+<p class="texto"><span class="negritas">Explicacion: </span>En el h1 le puse un padding de 30 pixeles para que este mas separado de los demas textos y tambien lo hice mas grande</p>
+
+<pre><code>
+<p class="codigo">
+                            
+.navegador {
+    height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+    background: rgb(12, 12, 17);
+    text-decoration: none;
+                                
+}
+</p>
+</code></pre> 
+
+<p class="texto"><span class="negritas">Explicacion: </span>En la barra de navegacion puse una altura de 60 pixeles y le puse un text-transform para que el texto se ponga en mayusculas, alineo todo hacia el centro y el fondo de color gris.</p>
+
+<pre><code>
+<p class="codigo">
+.lista {
+    list-style: none;
+    display: inline-flex;
+}
+</p>
+</code></pre>
+
+<p class="texto"><span class="negritas">Explicacion: </span>Para la lista de enlaces le puse un display inline-flex para que los elementos se pongan uno al lado del otro y les quite a los links las decoraciones default de html.</p>
+
+<pre><code>
+<p class="codigo">
+.links {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+</p>
+</code></pre>
+
+<p class="texto" ><span class="negritas">Explicacion: </span>Aca basicamente a los links les removi las decoraciones default de html, los puse de color blanco y los alinee al centro, los hice mas grande tambien</p>
+                            
+<pre><code>
+<p class="codigo">
+.p-separado {
+    text-align: justify center;
+    line-height: 25px;
+    font-size: 17px;
+}
+</p>
+</code></pre>
+                            
+<pre><code>
+<p class="codigo">
+.h2-clase {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    padding-right: 10px;
+}
+</p>
+</code></pre>
+                            
+
+                        </p>
+                    </code></pre>
+
+                    <p class="texto">Las partes dificiles de hacer la nueva pagina fue la parte de los textos, aveces simplemente no quedaban bien con el cuadro, porque se quedaba a raya de la caja hasta que descubri que le podia poner padding a la caja y ya se veia bien el texto, fui tonto al ponerle margin al texto en vez de solo ponerle algo de padding al div de la caja, el diseño de la pagina web no fue decision facil tampoco, tenia varios aspectos para la pagina, pero me parecian dificiles de hacer con mi conocimiento actual asi que tuve que simplemente ir por algo mas facil de hacer pero que se vea elegante a la vista</p>
+
+                    <p class="texto">Despues de todos los problemas que tuve que pasar como seria que me confundia generalmente en el CSS y bueno despues de que quede satisfecho con el resultado final lo publique en mi dominio itzhenry.is-a.dev para remplazar el antiguo, para mi opinion personal quedo muy bien el diseño.</p>
+
+                    <p class="texto">Para terminar este blog, la programacion es algo que me encanta hacer y me encanto aprender a hacer mis propias paginas web y blogs, gracias al lector por leerte este corto blog sobre como hice mi carta/pagina de presentacion, perdona si este blog te parece demasiado corto o si le falta un poco de informacion, es la primera vez qu hago uno y espero que te haya enseñado algo o te haga entretenido un rato, gracias.</p>
+
+                    <button class="boton" onclick="location.href='https://itzhenry.is-a.dev/blogs'">Inicio</button>
+
+
 
         </p>
     </div>

@@ -41,6 +41,7 @@ body {
     border-radius: 20px;
     margin-top: 50px;
     padding: 30px;
+    max-width: 600px;
 }
 
 #titulo {
@@ -48,6 +49,9 @@ body {
 }
 
 .texto {
+    white-space: pre-wrap;   /* Wrap text in the pre block */
+    word-wrap: break-word;   /* Break long words onto the next line */
+    overflow-x: auto;
     text-align: justify;
 }
 
@@ -57,6 +61,26 @@ body {
 
 .codigo {
     font-family: Consolas, monaco, monospace;
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
+    white-space: pre-wrap;   /* Wrap text in the pre block */
+            word-wrap: break-word;   /* Break long words onto the next line */
+            overflow-x: auto;
+    max-width: 600px;
+}
+
+.negritas {
+    font-weight: bold;
+}
+
+.boton {
+    font-family: sans-serif;
+    background-color: rgb(27, 27, 36);
+    border-radius: 20px;
+    border-color: white;
+    margin: 20px;
+    height: 50px;
+    width: 100px;
+    color: white;
+    font-size: 20px
 }
