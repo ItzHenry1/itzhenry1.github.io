@@ -1,5 +1,5 @@
 body {
-    background: black;
+    background: rgb(22, 22, 22);
     font-family: arial;
     color: white;
 }
@@ -10,7 +10,6 @@ body {
     text-transform: uppercase;
     text-align: center;
     width: auto;
-    background: rgb(12, 12, 17);
     text-decoration: none;
     
 }

@@ -1,18 +1,54 @@
 body {
-    background: black;
+    background: rgb(22, 22, 22);
     font-family: sans-serif;
     color: white;
 }
 
-.card {
-    background: rgb(18, 17, 17);
-    text-align: center;
-    width: 600px;
-    height: auto;
-    margin: auto;
+/* Contenedores */
+
+.contenedor {
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+}
+
+#technologies {
+    display: flex;
+    align-items: center;
+}
+
+.techimage {
+    background-color: rgb(43, 42, 42);
     border-radius: 20px;
-    margin-top: 50px;
+    margin: 10px;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+}
+
+.resaltado {
+    color: lightblue;
+    text-decoration: underline;
+    text-decoration-color: lightblue;
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+}
+
+.card {
+    text-align: left;
+    width: 500px;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
     padding: 20px;
+}
+
+.techcontainer {
+    margin: 200px;
+}
+
+.linea {
+    display: inline-block;
 }
 
 .boton {
@@ -20,7 +56,7 @@ body {
     background-color: rgb(27, 27, 36);
     border-radius: 20px;
     border-color: white;
-    margin: 20px;
+    margin: 10px;
     height: 50px;
     width: 100px;
     color: white;
@@ -28,7 +64,6 @@ body {
 }
 
 .h1-separado {
-    padding-top: 30px;
     font-size: 40px;
 }
 
@@ -37,7 +72,6 @@ body {
     text-transform: uppercase;
     text-align: center;
     width: auto;
-    background: rgb(12, 12, 17);
     text-decoration: none;
     
 }
@@ -47,6 +81,9 @@ body {
     display: inline-flex;
 }
 
+
+/* Textos */
+
 .links {
     color: white;
     text-decoration: none;
@@ -55,10 +92,10 @@ body {
     font-size: 20px;
 }
 
-.p-separado {
-    text-align: justify center;
+p {
+    text-align: left;
     line-height: 25px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .h2-clase {
@@ -66,5 +103,9 @@ body {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-family: sans-serif;
-    padding-right: 10px;
+}
+
+.h1-titulo {
+    font-size: 90px;
+    margin: 1px;
 }
