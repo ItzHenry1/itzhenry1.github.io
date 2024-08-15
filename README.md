@@ -1,1 +1,2 @@
-# EN REMODELACION
+# ¡Hola!
+> Si estas aqui es porque probablemente quieres ver el repositorio de mi carta de presentacion, en todo caso te doy una calida bienvenida a mi codigo y si tienes alguna mejora o recomendacion para la pagina hacer un Issue o un PR y yo lo revisare con gusto
