@@ -1,0 +1,85 @@
+body {
+    background: rgb(22, 22, 22);
+    font-family: arial;
+    color: white;
+}
+
+/* Navegador de la parte de arriba */
+.boton {
+    font-family: sans-serif;
+    background-color: rgb(27, 27, 36);
+    border-radius: 20px;
+    border-color: white;
+    margin: 10px;
+    height: 50px;
+    width: 120px;
+    color: white;
+    font-size: 20px
+}
+
+.navegador {
+    height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+    text-decoration: none;
+    
+}
+
+.subnavtext {
+    margin-right: 700px;
+    text-transform: none;
+    text-align: left;
+}
+
+.lista {
+    list-style: none;
+    display: inline-flex;
+}
+
+/* Textos */
+
+.links {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+p {
+    text-align: left;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+
+/* Contenedores */
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.proyectos {
+    text-align: center;
+    border-radius: 40px;
+    height: auto;
+    width: 400px;
+    background: rgb(43, 42, 42);
+    display: block;
+    margin: 30px;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+}
+
+.images {
+    border-radius: 20px;
+}
+
+#titulo {
+    text-align: center;
+}

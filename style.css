@@ -62,10 +62,6 @@ body {
     font-size: 20px
 }
 
-.h1-separado {
-    font-size: 40px;
-}
-
 .navegador {
     height: 60px;
     text-transform: uppercase;
@@ -73,6 +69,12 @@ body {
     width: auto;
     text-decoration: none;
     
+}
+
+.subnavtext {
+    margin-right: 700px;
+    text-transform: none;
+    text-align: left;
 }
 
 .lista {
