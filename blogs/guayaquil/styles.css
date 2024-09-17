@@ -1,0 +1,102 @@
+body {
+    background: #fff;
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+/* Barra de navegacion */
+
+.navegador {
+    height: 60px;
+    margin: 10px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+#texto-blog {
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.navegador-textos {
+    text-align: center;
+}
+
+.lista {
+    list-style: none;
+    display: inline-flex;
+}
+
+.links {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    margin: 30px;
+    font-size: 20px;
+}
+
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.caja {
+    display: block;
+    /* background: rgb(172, 170, 170); */
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.p-tex {
+    line-height: 30px;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+.p-img {
+    padding-left: 15px;
+    padding-right: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.subtitulos {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.titulos {
+    font-size: 40px;
+    text-align: center;
+    text-weight: bold;
+    padding: 5px;
+}
+
+.caja-flex {
+    display: flex;
+    align-items: center;
+}
+
+.imagen {
+    display: block;
+}
+
+.imagenes {
+    text-align: center;
+    padding: 10px;
+}
