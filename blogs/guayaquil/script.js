@@ -16,14 +16,14 @@ particlesJS("particula1", {
       },
       line_linked: {
         enable: true, // Connecting lines between particles
-        distance: 120,
+        distance: 100,
         color: "#ffffff",
         opacity: 0.5,
         width: 1,
       },
       move: {
         enable: true,
-        speed: 1.5, // Adjust movement speed
+        speed: 3, // Adjust movement speed
       },
     },
     interactivity: {
@@ -52,7 +52,7 @@ particlesJS("particula1", {
       },
       line_linked: {
         enable: true, // Connecting lines between particles
-        distance: 100,
+        distance: 85,
         color: "#ffffff",
         opacity: 0.5,
         width: 1,
