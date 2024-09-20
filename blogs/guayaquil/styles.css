@@ -61,6 +61,15 @@ body {
 
 /* Todo lo que son textos */
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 .p-tex {
     line-height: 30px;
     font-size: 20px;
@@ -68,6 +77,17 @@ body {
     padding-right: 60px;
     text-align: justify;
 }
+
+.scrollear {
+    opacity: 0;
+    transform: translateY(20px); /* Move text slightly downward */
+    transition: opacity 1.5s ease, transform 1.2s ease; /* Smooth transition */
+}
+.scrollear.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .texto-li {
     line-height: 30px;
     font-size: 20px;
@@ -93,14 +113,28 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding: 10px;
+    background: linear-gradient(270deg,orange,  red, orange, red, orange);
+    -webkit-background-clip: text; /* Solo para Safari */
+    -webkit-text-fill-color: transparent;
 }
 
 .titulos {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     text-weight: bold;
     padding: 5px;
+    background: linear-gradient(270deg, #a0f2fd, #c2f8fc, #07bcf3);
+    -webkit-background-clip: text; /* Solo para Safari */
+    -webkit-text-fill-color: transparent;
+     /* Move text slightly downward */
 }
+
+.principaltexto {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+}
+
+
 
 .caja-flex {
     display: flex;
@@ -129,4 +163,5 @@ body {
     width: 100%;
     height: 800%;
     z-index: -1; /* Put it behind other elements */
-  }
+}
+
