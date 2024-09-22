@@ -123,11 +123,33 @@ body {
     text-align: center;
     text-weight: bold;
     padding: 5px;
-    background: linear-gradient(270deg, #a0f2fd, #c2f8fc, #07bcf3);
-    -webkit-background-clip: text; /* Solo para Safari */
-    -webkit-text-fill-color: transparent;
+    color: #fff;
+    
      /* Move text slightly downward */
 }
+
+
+  .animado {
+    background: radial-gradient(
+      circle at 100%,
+      #7be3fd,
+      #86ebf8 50%,
+      #c7f8fe 75%,
+      #8fcffa 75%
+    );
+    font-weight: 600;
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 1.5s linear infinite;
+  }
+  
+  @keyframes animatedTextGradient {
+    to {
+      background-position: 200% center;
+    }
+  }
 
 .principaltexto {
     opacity: 0;
