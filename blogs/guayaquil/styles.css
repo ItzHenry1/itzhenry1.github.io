@@ -2,7 +2,7 @@ body {
     color: #fff;
     /* color: rgb(22, 22, 22); */
     font-family: 'Montserrat';
-    background: rgb(22, 22, 22);
+    background: #000;
 }
 
 /* Barra de navegacion */
@@ -71,6 +71,14 @@ body {
   }
 
 .p-tex {
+    line-height: 30px;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+p {
     line-height: 30px;
     font-size: 20px;
     padding-left: 60px;
