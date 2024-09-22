@@ -9,10 +9,10 @@ body {
 
 .navegador {
     height: 60px;
-    margin: 10px;
     width: auto;
     text-align: center;
     text-decoration: none;
+    border-color: white;
 }
 
 .bold {
@@ -113,9 +113,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding: 10px;
-    background: linear-gradient(270deg,orange,  red, orange, red, orange);
-    -webkit-background-clip: text; /* Solo para Safari */
-    -webkit-text-fill-color: transparent;
+    color: #fff;
 }
 
 .titulos {
@@ -127,7 +125,7 @@ body {
     
      /* Move text slightly downward */
 }
-
+ /* Matematicas */
 
   .animado {
     background: radial-gradient(
@@ -135,7 +133,41 @@ body {
       #7be3fd,
       #86ebf8 50%,
       #c7f8fe 75%,
-      #8fcffa 75%
+      #bef4fd 75%
+    );
+    font-weight: 600;
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 1.5s linear infinite;
+  }
+
+  /* Ciencias */
+
+  .animado2 {
+    background: radial-gradient(
+      circle at 100%,
+      #7bfd86,
+      #86f886 50%,
+      #c7fed5 75%,
+      #befdc8 75%
+    );
+    font-weight: 600;
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 1.5s linear infinite;
+  }
+  /* Lenguaje */
+  .animado3 {
+    background: radial-gradient(
+      circle at 100%,
+      #fdb57b,
+      #f8d486 50%,
+      #feedc7 75%,
+      #fdeebe 75%
     );
     font-weight: 600;
     background-size: 200% auto;
@@ -153,7 +185,13 @@ body {
 
 .principaltexto {
     opacity: 0;
-    animation: fadeIn 1.2s ease-in forwards;
+    transform: translateY(20px); /* Move text slightly downward */
+    transition: opacity 2.5s ease, transform 2s ease;
+}
+
+.principaltexto.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 

@@ -39,6 +39,15 @@ function handleScroll() {
   });
 }
 
+window.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll('.principaltexto')
+
+  elements.forEach(el => {
+    console.log(el)
+    el.classList.add('visible')
+  })
+})
+
 // Listen for the scroll event
 window.addEventListener('scroll', handleScroll);
 
