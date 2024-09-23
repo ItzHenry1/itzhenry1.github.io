@@ -53,7 +53,7 @@ window.addEventListener('scroll', handleScroll);
 
 particlesJS("particula1", {
   particles: {
-    number: { value: 90 }, // Adjust the number of particles
+    number: { value: 100 }, // Adjust the number of particles
     color: { value: "#ffffff" }, // Particle color
     shape: {
       type: "line", // This can be "line" for stick-like particles
@@ -63,11 +63,11 @@ particlesJS("particula1", {
       random: true
     },
     size: {
-      value: 1,
+      value: 1.5,
     },
     line_linked: {
       enable: true, // Connecting lines between particles
-      distance: 90,
+      distance: 100,
       color: "#ffffff",
       opacity: 0.5,
       width: 1,
